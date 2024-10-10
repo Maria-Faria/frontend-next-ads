@@ -1,11 +1,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image"; 
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header isLogged={false}/>
 
       <main className="p-5">
         <h1 className="text-3xl">Force Ipsum</h1>
@@ -24,6 +25,8 @@ export default function Home() {
         <p>
         Hang on back there. Red Six. Can you see Red Five? There's a heavy fire zone on this side. Red Five, where are you? I can't shake him! I'm on him, Luke! Hold on! Blast it! Wedge where are you? Thanks, Wedge. Good shooting, Wedge! Red Leader. This is Gold Leader. We're starting out attack run.
         </p>
+
+        <Link href={"/dashboard"}>Dashboard</Link>
       </main>
 
       <Footer />
