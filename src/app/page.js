@@ -1,12 +1,12 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Image from "next/image"; 
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Header isLogged={false}/>
+      <Header />
 
       <main className="p-5">
         <h1 className="text-3xl">Force Ipsum</h1>
